@@ -6,7 +6,7 @@
 
 ## Padrões GOF 
 
--Factory Method (Método de Fábrica): O padrão Factory Method é aplicado por meio da interface `TaskFactory` e sua implementação `ConcreteTaskFactory`. A interface `TaskFactory` define um método `createTask`, que as classes concretas implementam para criar instâncias da classe `Task`. Isso permite criar objetos `Task` sem especificar sua classe concreta, promovendo a flexibilidade e o desacoplamento.
+- Factory Method (Método de Fábrica): O padrão Factory Method é aplicado por meio da interface `TaskFactory` e sua implementação `ConcreteTaskFactory`. A interface `TaskFactory` define um método `createTask`, que as classes concretas implementam para criar instâncias da classe `Task`. Isso permite criar objetos `Task` sem especificar sua classe concreta, promovendo a flexibilidade e o desacoplamento.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+
 
