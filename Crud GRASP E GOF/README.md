@@ -1,18 +1,12 @@
-## Getting Started
+## Padrões GRASP 
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+- Information Expert (Perito em Informação): O princípio do Information Expert sugere que a responsabilidade deve ser atribuída à classe que possui as informações necessárias para cumprir a tarefa. No código, a classe `Task` é responsável por armazenar informações sobre uma tarefa, como seu ID e descrição, o que está alinhado com esse princípio. A classe `TaskManager` utiliza informações da classe `Task` para executar operações CRUD.
 
-## Folder Structure
+- Low Coupling (Baixo Acoplamento): O código mantém um baixo acoplamento entre as classes. A classe `TaskManager` interage com a interface `TaskFactory`, que é uma maneira de criar objetos `Task`, sem depender da implementação concreta da fábrica. Isso mantém as classes independentes e flexíveis para futuras extensões ou mudanças.
 
-The workspace contains two folders by default, where:
+## Padrões GOF 
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+-Factory Method (Método de Fábrica): O padrão Factory Method é aplicado por meio da interface `TaskFactory` e sua implementação `ConcreteTaskFactory`. A interface `TaskFactory` define um método `createTask`, que as classes concretas implementam para criar instâncias da classe `Task`. Isso permite criar objetos `Task` sem especificar sua classe concreta, promovendo a flexibilidade e o desacoplamento.
 
 > If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
 
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
